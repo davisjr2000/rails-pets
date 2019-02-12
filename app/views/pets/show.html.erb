@@ -1,0 +1,9 @@
+<%= @pet.name %>
+
+<%= @pet.species %>
+
+<%= @pet.address %>
+
+<%= link_to "Update", edit_pet_path(@pet) %>
+<%= link_to "Home", pets_path %>
+<%= link_to "Deletar", pet_path(@pet), method: :delete, data: {confirm: "Tem certeza que deseja destruir esse doginho?"} %>

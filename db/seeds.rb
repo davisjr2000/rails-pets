@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do
+  Pet.create(name: Faker::Superhero.name, species: ["dog","cat","fish"].sample, date: Time.now , address: ["Rua Mourato Coelho 1404", "Avenida Paulista 1972"].sample)
+end
